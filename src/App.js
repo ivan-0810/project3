@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Provider } from './Context/GamesContext';
+import useFetch from "./Hooks/useFetch";
+import { BrowserRouter, Route, Switch } from "react-router-dom"
+import MainCont from "./components/MainCont/MainCont";
+import RenderGame from "./components/Game/RenderGame";
+
 
 function App() {
+  const games = useFetch('https://brainsterboxapi.herokuapp.com/games');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter  basename={window.location.pathname}>
+        <Switch>
+          {games && (
+            <Provider games={games}>
+              <Route path="/" exact component={MainCont} />
+              <Route path="/Game/:id" component={RenderGame} />
+            </Provider>
+          )}
+        </Switch>
+      </BrowserRouter>
+
     </div>
   );
 }

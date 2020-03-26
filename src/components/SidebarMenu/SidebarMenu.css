@@ -1,0 +1,76 @@
+.sidebar-brightness {
+    display: flex;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 100%;
+    color: #fcd232;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    overflow-x: hidden;
+    transition: width 1.5s ease-in-out;
+  }
+  .brightness{
+    position: fixed;
+    top: 0;
+    left: 20%;
+    background-color: transparent;
+    width: 80%;
+    height: 100%;
+  }
+  .overlay {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+  }
+  .App {
+      opacity: 0.9;
+  }
+  .sidebar-logo-closeX {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px;
+  }
+  .closeX {
+      margin-right: 10px;
+    cursor: pointer;  
+    color: black;
+    font-weight: bold;
+}
+.sidebar-logo-closeX .logo{
+    margin-left: 10px;
+}
+.sidebar ul{
+    list-style-type: none;
+    padding: 0 20px;
+    margin-top: 100px;
+}
+.sidebar ul li{
+    padding: 5px 0;
+    border-bottom: 1px solid lightgray;
+}
+.yellow-color{
+    padding:unset;
+    border: none;
+    color: #fcd232};
+
+.black-color{
+    color: black !important;
+}
+.black-color:hover, .yellow-color:hover{
+    color: black;
+    text-decoration: none;
+}
+input::placeholder{
+    color: #421782;
+    font-size: 13px;
+}
+form div {
+    border: 1px solid #421782;
+}
+

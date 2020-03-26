@@ -1,0 +1,79 @@
+.filters {
+    width: 90%;
+    margin: 50px auto;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+}
+.inner-filters { 
+    padding: 20px 0;
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    text-align: left;
+   
+}
+.category {
+    flex-basis: 60%;
+    margin-right: 10px;
+    position: relative;
+}
+.time-group{ 
+    flex-basis: 40%;
+    display: flex;
+}
+.time-frame{
+    flex-basis: 48%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.group-size{ 
+    flex-basis: 48%;
+    margin-left: 10px;
+}
+.category, .time-frame{
+    display: flex;
+}
+.category, .time-frame,.group-size {
+    display: flex;
+    flex-direction: column;
+}
+.category div, .time-frame div, .group-size div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.filters p{
+ margin-bottom: 5px;
+ color: gray;
+}
+.time-frame button{flex-basis: 48%;}
+.category button{flex-basis: 32%;}
+.group-size button{ 
+    flex-basis: 32%;
+}
+
+.filter-btn{
+    background-color: white;
+    border: 1px solid #421782;
+    color: #421782;
+    margin-bottom:3px ;
+    margin-right: 2px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.filter-btn:hover{
+    background-color: #421782;
+    color: white;
+}
+.filter-btn:focus{outline: none;}
+.filter-btn span {
+    margin-left: 5px;
+    color: gray;
+    font-size: 11px;
+}
+.selected, .selected span {
+    background-color: #421782;
+    color: white;
+}
+
+

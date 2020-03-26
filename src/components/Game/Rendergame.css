@@ -1,0 +1,45 @@
+   .game-spec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #f3f3f3;
+    padding:25px 25px 10px 25px;
+}
+.render-game .title {
+    width: 80%;
+    margin: 20px auto;
+}
+.clip-path{
+    width: 100%;
+    height: 70vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 46%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 46%, 0 100%);
+}
+.clip-path-2 {
+    background-color: #421782;
+    width: 100%;
+    height: 70vh;
+    -webkit-clip-path: polygon(0 46%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 46%, 100% 0, 100% 100%, 0 100%) 
+}
+.game-spec-categories {
+    display: flex;
+    margin-left: 10px;
+    width: 19%;
+}
+.game-text {
+    width: 80%;
+    margin: 0 auto;
+}
+.game-text-desc {
+    margin-bottom: 50px;
+    font-size: 13px;
+}
+.game-text h3 {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+

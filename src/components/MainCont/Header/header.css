@@ -1,0 +1,39 @@
+
+.brainster-link{
+    color: #fcd232;
+    text-decoration: underline;
+  }
+  .brainster-link:hover{
+    color: #fcd232;
+  }
+  .header-firstP{
+    padding: 20px 0 60px 0;
+    margin-top: 77px;
+    color: white;
+    font-size: 11px;
+  }
+  .header p{
+    font-size: 11px;
+  }
+  .header h1 {
+    text-transform: uppercase;
+  }
+  .header h1, .header p {
+    color: white;
+  }
+  .assessment-btn {
+    background-color: #fcd232;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .assessment-btn:hover {
+    background-color: #fcd232;
+    color: black;
+    text-decoration: none;
+  }
+  .header {
+    text-align: center;
+}
