@@ -5,7 +5,7 @@ import useFetch from "./Hooks/useFetch";
 import { BrowserRouter, Route, Switch } from "react-router-dom"
 import MainCont from "./components/MainCont/MainCont";
 import RenderGame from "./components/Game/RenderGame";
-
+import "./components/Responsive.css";
 
 function App() {
   const games = useFetch('https://brainsterboxapi.herokuapp.com/games');
