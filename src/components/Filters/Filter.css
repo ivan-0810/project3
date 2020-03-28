@@ -3,6 +3,7 @@
     margin: 50px auto;
     background-color: #f3f3f3;
     border-radius: 5px;
+  
 }
 .inner-filters { 
     padding: 20px 0;
@@ -50,11 +51,16 @@
 .group-size button{ 
     flex-basis: 32%;
 }
-
+.filter-games-button{
+    display: none;
+}
+.filter-close-btn {
+    display: none;
+}
 .filter-btn{
-    background-color: white;
+    background-color: white!important;
     border: 1px solid #421782;
-    color: #421782;
+    color: #421782!important;
     margin-bottom:3px ;
     margin-right: 2px;
     padding: 10px 0;
@@ -72,8 +78,8 @@
     font-size: 11px;
 }
 .selected, .selected span {
-    background-color: #421782;
-    color: white;
+    background-color: #421782!important;
+    color: white!important;
 }
 
 

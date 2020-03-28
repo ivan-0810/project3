@@ -10,7 +10,7 @@ import { useContext } from 'react';
 import { Context } from '../../Context/GamesContext';
 
 const MainCont = () => {
-    const bg= {background: "linear-gradient( -16deg, rgb(66, 23, 130) 22%, transparent 18%,transparent 67%, rgb(66, 23, 130) 67%)"}
+    const bg= {background: "linear-gradient( -16deg, rgb(66, 23, 130) 32%, transparent 18%,transparent 67%, rgb(66, 23, 130) 67%)"}
     const { forma } = useContext(Context);
 return (
     <div className="Box"style={bg}>
@@ -21,6 +21,7 @@ return (
               <div className="header-fixed">
               <p className="header-firstP">Изработено од студентите на академија за програмирање на <a href="https://brainster.co/" className="brainster-link">Brainster</a></p>
               <Header />
+             
               <Filters />
               </div>
               <GamesList/>

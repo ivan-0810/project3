@@ -96,9 +96,7 @@ export const Provider = props => {
           
      
     }
-    if(duplicateGames.length === 0){
-      setShow(true);
-    }
+   
     return () => {
         setCount1(0)
     }
@@ -109,18 +107,18 @@ useEffect(() => {
   if (count > 0) {
 
       if (isCategory === true) {
-          const takeArr = updateFunction(categoryArr, timeFrameArr, groupSizeArr, games, names, prazna);
+          const takeArr = updateFunction(categoryArr, timeFrameArr, groupSizeArr, games, names, prazna,setShow);
           setPrazna(takeArr)
           setIsCategory(false)
       }
       if (isTimeFrame === true) {
-          const takeArr = updateFunction(timeFrameArr, categoryArr, groupSizeArr, games, names, prazna);
+          const takeArr = updateFunction(timeFrameArr, categoryArr, groupSizeArr, games, names, prazna,setShow);
           setPrazna(takeArr)
           setIsTimeFrame(false)
 
       }
       if (isGroupSize === true) {
-          const takeArr = updateFunction(groupSizeArr, categoryArr, timeFrameArr, games, names, prazna)
+          const takeArr = updateFunction(groupSizeArr, categoryArr, timeFrameArr, games, names, prazna,setShow)
           setPrazna(takeArr)
           setIsGroupSize(false)
 

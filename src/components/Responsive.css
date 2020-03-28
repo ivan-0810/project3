@@ -16,6 +16,7 @@
         position: fixed;
         margin: 0 10px;
         bottom: 0;
+        display: none;
     }
     .inner-filters {
         width: 100%;
@@ -39,7 +40,7 @@
         padding: 0;
         font-size: 9px;
         flex-basis: 30%;
-        height: 20px;
+        height: 32px;
     }
     .category div {
         justify-content: center;
@@ -51,7 +52,7 @@
         margin: 0;
     }
     .time-frame button, .group-size button {
-        flex-basis: 23%;
+        flex-basis: 33%;
     }
     .time-frame div, .group-size div {
         margin-left: 15px;
@@ -145,11 +146,44 @@
         padding: 10px 0;
         font-size: 13px;
     }
+    .filter-games-button, .filter-close-btn {
+        width: 94%;
+        display: flex;
+        justify-content: space-evenly;
+        box-shadow: 0 0 10px -2px gray;
+        cursor: pointer;
+        background-color: #fcd232;
+        border-radius: 4px;
+    }
+    .filter-games-button{
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+    }
+    .filter-close-btn {
+        margin: 5px auto;
+    }
+
+    .filter-games-button button, .filter-close-btn button  {
+        background: transparent;
+        border: none;
+        font-weight: bold;
+    }
+    .filter-games-button span, .filter-close-btn span {
+        margin: 7px;
+    }
 }
+@media only screen and (min-width: 425px) and (max-width: 600px) {
+    .filter-games-button {
+        width: 96%;
+    }
+}
+
 @media only screen and (min-width: 600px) and (max-width: 768px){
     .main-cont{
         width: 95%;
     }
+   
     .games-list {
         width: 100%;
         justify-content: space-evenly;
@@ -195,7 +229,9 @@
         border: 2px solid #421782;
         margin: 0;
         left: 0;
+        display: none;
     }
+
     .header-firstP {
         padding: 10px;
         margin-top: 87px;
@@ -214,6 +250,7 @@
         width: 100%;
         padding-left: 5px;
         margin: 0 5px;
+        flex-direction: column;
     }
     .category, .time-group {
         flex-basis: 49%;
@@ -246,13 +283,67 @@
         padding: 10px 0;
         font-size: 13px;
     }
+    .filter-games-button, .filter-close-btn {
+        width: 97%;
+        display: flex;
+        justify-content: space-evenly;
+        box-shadow: 0 0 10px -2px gray;
+        cursor: pointer;
+        background-color: #fcd232;
+        border-radius: 4px;
+    }
+    .filter-games-button{
+        position: fixed;
+        bottom: 10px;
+        left: 14px;
+    }
+    .filter-close-btn {
+        margin-bottom: 5px;
+    }
+
+    .filter-games-button button, .filter-close-btn button  {
+        background: transparent;
+        border: none;
+        font-weight: bold;
+    }
+    .filter-games-button span, .filter-close-btn span {
+        margin: 7px;
+    }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px){
+@media only screen and (min-width: 768px) and (max-width: 850px){
+    .inner-filters {
+        width: 95%;
+    }
+    .filters p {
+        font-size: 11px;
+        }
+    .filter-btn {
+        padding: 10px 0;
+        font-size: 11px;
+        flex-basis: 30%;
+    }
+    .time-frame button {
+        flex-basis: 47%;
+    }
+}
+@media only screen and (min-width: 850px) and (max-width: 1024px){
 .sidebar{
     width: 30%;
 }
 .filter-btn {
     padding: 10px 0;
-    font-size: 13px;
+    font-size: 12px;
 }
+.filters p {
+    font-size: 12px;
+    }
+    .category{
+    flex-basis:58%;
+    }
+    .group-size {
+    flex-basis: 54%;
+    }
+    .group-size button {
+        flex-basis: 30%;
+    }
 }
