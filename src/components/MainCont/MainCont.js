@@ -24,7 +24,11 @@ return (
               <p className="header-firstP">Изработено од студентите на академија за програмирање на <a href="https://brainster.co/" className="brainster-link">Brainster</a></p>
               <Header />
              
-              <div className="f2">
+
+
+
+              <div className="f2
+              ">
             <Filters />
                  </div>
               </div>

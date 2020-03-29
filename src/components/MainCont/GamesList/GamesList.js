@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Context } from "../../../Context/GamesContext";
 import "./GamesList.css";
-import { A } from "hookrouter"
+import { Link } from "react-router-dom"
 
 
 const GamesList = (props) => {
@@ -11,7 +11,7 @@ const GamesList = (props) => {
         
         <div className='games-list' >
             {duplicateGames.map((game,inx) => (
-                <A href={`/game/${game.id}`}
+                <Link to={`Game/${game.id}`}
                 key={inx}>
                 <div key={game.id} className="game">
                     <div className="img-game"
@@ -40,7 +40,7 @@ const GamesList = (props) => {
                         </div>
                     </div>
                 </div>
-                </A>
+                </Link>
             ))}
         </div>
        

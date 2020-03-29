@@ -89,9 +89,11 @@ export const Provider = props => {
         if (allCards === true) {
             setPrazna([])
             setDuplicateGames(games)
+            window.scrollTo(0,0);
         } else {
         
             setDuplicateGames(prazna) 
+            window.scrollTo(0, 210);
             }   
         }
     return () => {

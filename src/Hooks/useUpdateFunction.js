@@ -1,5 +1,7 @@
-const updateFunction = (arr1, arr2, arr3, games, names) => {
-    console.log("vleguva");
+
+
+const updateFunction = (arr1, arr2, arr3, games, names, prazna, setShow,resetGames) => {    
+  
     
     if (arr2.length === 0 && arr3.length === 0) {
   
@@ -8,7 +10,10 @@ const updateFunction = (arr1, arr2, arr3, games, names) => {
             let filtered = games.filter(card => card[names[0]].split(" ")[0].toLowerCase() === el);
             filtered1.push(...filtered);
         })
-  
+        if(filtered1.length===0){
+             return resetGames()
+        }
+     
         return filtered1
   
     }
@@ -21,7 +26,10 @@ const updateFunction = (arr1, arr2, arr3, games, names) => {
                 let filtered = games.filter(card => card[names[1]].split(" ")[0].toLowerCase() === el)
                 filtered1.push(...filtered)
             })
-          
+            if(filtered1.length === 0){
+                setShow(true);
+              }
+              
             return filtered1;
   
         } else {
@@ -34,7 +42,9 @@ const updateFunction = (arr1, arr2, arr3, games, names) => {
                 let filtered = filtered1.filter(card => card[names[1]].split(" ")[0].toLowerCase() === el);
                 filtered2.push(...filtered)
             })
-  
+            if(filtered2.length === 0){
+                setShow(true);
+              }
             return filtered2
         }
     }
@@ -47,6 +57,9 @@ const updateFunction = (arr1, arr2, arr3, games, names) => {
                 let filtered = games.filter(card => card[names[2]].split(" ")[0].toLowerCase() === el)
                 filtered1.push(...filtered)
             })
+            if(filtered1.length === 0){
+                setShow(true);
+              }
             return filtered1
         } else {
             arr1.forEach(el => {
@@ -59,7 +72,9 @@ const updateFunction = (arr1, arr2, arr3, games, names) => {
                 let filtered = filtered1.filter(card => card[names[2]].split(" ")[0].toLowerCase() === el);
                 filtered2.push(...filtered)
             })
-  
+            if(filtered2.length === 0){
+                setShow(true);
+              }
             return filtered2
         }
     }
@@ -78,6 +93,9 @@ const updateFunction = (arr1, arr2, arr3, games, names) => {
                 let filtered = filtered1.filter(card => card[names[1]].split(" ")[0].toLowerCase() === el);
                 filtered2.push(...filtered)
             })
+            if(filtered2.length === 0){
+                setShow(true);
+              }
             return filtered2
         } else {
             arr3.forEach(el => {
@@ -93,6 +111,9 @@ const updateFunction = (arr1, arr2, arr3, games, names) => {
                 let filtered = filtered2.filter(card => card[names[0]].split(' ')[0].toLowerCase() === el);
                 filtered3.push(...filtered)
             })
+            if(filtered3.length === 0){
+                setShow(true);
+              }
             return filtered3
         }
   

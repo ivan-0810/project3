@@ -7,13 +7,14 @@ import useFetch from "../../Hooks/useFetch"
 
 
 const RenderGame = props => {
- 
+    console.log(props);
+    
     
     //const { games } = useContext(Context);      
-  //  const [params] = useState(parseInt(props.match.params.id));
+   const params = props.match.params.id;
     //const gamesParams = games[params];
     const games = useFetch(
-        `https://brainsterboxapi.herokuapp.com/games/${props.photoId}`
+        `https://brainsterboxapi.herokuapp.com/games/${params}`
       );
     const stepDescirption = (desc) => {
         if (desc.includes("\n")) {
