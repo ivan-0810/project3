@@ -162,7 +162,7 @@ useEffect(() => {
 
   const filterCards = (e) => {
     if(e.target.name === "energizes"){
-      setShow(true);
+      return setShow(true);
     }
     if (e.target.name === "all") {
       setAllCards(true);
