@@ -10,22 +10,26 @@ import { useContext } from 'react';
 import { Context } from '../../Context/GamesContext';
 
 const MainCont = () => {
-    const bg= {background: "linear-gradient( -16deg, rgb(66, 23, 130) 32%, transparent 18%,transparent 67%, rgb(66, 23, 130) 67%)"}
     const { forma } = useContext(Context);
 return (
-    <div className="Box"style={bg}>
+    <div className="Box">
         {forma ? <Forma /> :
          <Fragment>
               <Menu bgColor="#421782" />
           <div className='main-cont'>
+            <div className="f1">
+            <Filters />
+            </div>
               <div className="header-fixed">
               <p className="header-firstP">Изработено од студентите на академија за програмирање на <a href="https://brainster.co/" className="brainster-link">Brainster</a></p>
               <Header />
              
-              <Filters />
+              <div className="f2">
+            <Filters />
+                 </div>
               </div>
               <GamesList/>
-              <div style={{padding: "60px 0 100px 0"}}>
+              <div className="down-header">
               <Header />
               </div>
           </div>

@@ -1,12 +1,24 @@
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
-    .Box  {
-            background: linear-gradient(-16deg, rgb(66, 23, 130) 15%, transparent 13%, transparent 90%, rgb(66, 23, 130) 18%)!important;
-        }
-    
     .main-cont {
         width:100%;
         margin-top: 150px;
+        position: relative;
+    }
+    .main-cont .f1 {
+        display: block;
+      }
+      .main-cont .f2 {
+        display: none;
+      }
+    .header-fixed{
+        padding-bottom: 36vh;
+    }
+    .down-header{
+        clip-path: polygon(0 28%, 100% 0, 100% 100%, 0 100%);
+    }
+    .filters, .filter-games-button{
+        z-index: 2;
     }
     .filters {
         width: 95%;
@@ -99,6 +111,9 @@
      
         header p {
             margin-bottom: 0;
+        }
+        .games-list{
+            margin-top: -23vh;
         }
     .games-list a {
         width: 100%;

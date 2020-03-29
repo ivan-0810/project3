@@ -55,10 +55,11 @@
     border-bottom: 1px solid lightgray;
 }
 .yellow-color{
+    background-color: transparent;
     padding:unset;
     border: none;
     color: #fcd232};
-
+    
 .black-color{
     color: black !important;
 }
