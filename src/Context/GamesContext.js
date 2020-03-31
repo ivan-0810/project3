@@ -161,7 +161,7 @@ useEffect(() => {
     if(e.target.name === "energizes"){
       return setShow(true);
     }
-    if (e.target.name === "all") {            
+    if (e.target.name === "all") {             
       return resetGames();
     } 
     else {
@@ -196,7 +196,6 @@ useEffect(() => {
           let name = e.target.name;
           let tagName = e.currentTarget.attributes["tag"].value;
           isSomethingFalse(name);
-
           if (tagName === "category") {
               setCategoryArr(categoryArr.filter(el => el !== name));
               setNames(["category", "timeFrame", "groupSize"])
