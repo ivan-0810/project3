@@ -9,47 +9,66 @@
     padding: 20px 0;
     width: 90%;
     margin: 20px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: left;
    
 }
 .category {
-    flex-basis: 60%;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
     margin-right: 10px;
     position: relative;
 }
 .time-group{ 
-    flex-basis: 40%;
+    -ms-flex-preferred-size: 40%; 
+        flex-basis: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .time-frame{
-    flex-basis: 48%;
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
     margin-left: 10px;
     margin-right: 10px;
 }
 .group-size{ 
-    flex-basis: 48%;
+    -ms-flex-preferred-size: 48%; 
+        flex-basis: 48%;
     margin-left: 10px;
 }
 .category, .time-frame{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .category, .time-frame,.group-size {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .category div, .time-frame div, .group-size div{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .filters p{
  margin-bottom: 5px;
  color: gray;
 }
-.time-frame button{flex-basis: 48%;}
-.category button{flex-basis: 32%;}
+.time-frame button{-ms-flex-preferred-size: 48%;flex-basis: 48%;}
+.category button{-ms-flex-preferred-size: 32%;flex-basis: 32%;}
 .group-size button{ 
-    flex-basis: 32%;
+    -ms-flex-preferred-size: 32%; 
+        flex-basis: 32%;
 }
 .filter-games-button{
     display: none;
@@ -81,5 +100,7 @@
     background-color: #421782!important;
     color: white!important;
 }
+
+
 
 
