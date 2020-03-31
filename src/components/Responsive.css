@@ -62,7 +62,7 @@
         flex-basis: 63%;
     }
     .time-frame, .group-size {
-        margin: 0;
+        margin: 0!important;
     }
     .time-frame button, .group-size button {
         flex-basis: 33%!important;
