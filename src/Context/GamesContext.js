@@ -89,11 +89,11 @@ export const Provider = props => {
         if (allCards === true) {
             setPrazna([])
             setDuplicateGames(games)
-            window.scrollTo(0,0);
+            window.scrollTo(0,300);
         } else {
         
             setDuplicateGames(prazna) 
-            window.scrollTo(0, 210);
+            window.scrollTo(0, 300);
             }   
         }
     return () => {
@@ -107,18 +107,18 @@ useEffect(() => {
   if (count > 0) {
 
       if (isCategory === true) {
-          const takeArr = updateFunction(categoryArr, timeFrameArr, groupSizeArr, games, names, prazna,setShow,resetGames);
+          const takeArr = updateFunction(categoryArr, timeFrameArr, groupSizeArr, games, names, prazna,setShow,setAllCards);
           setPrazna(takeArr)
           setIsCategory(false)
       }
       if (isTimeFrame === true) {
-          const takeArr = updateFunction(timeFrameArr, categoryArr, groupSizeArr, games, names, prazna,setShow,resetGames);
+          const takeArr = updateFunction(timeFrameArr, categoryArr, groupSizeArr, games, names, prazna,setShow,setAllCards);
           setPrazna(takeArr)
           setIsTimeFrame(false)
 
       }
       if (isGroupSize === true) {
-          const takeArr = updateFunction(groupSizeArr, categoryArr, timeFrameArr, games, names, prazna,setShow,resetGames)
+          const takeArr = updateFunction(groupSizeArr, categoryArr, timeFrameArr, games, names, prazna,setShow,setAllCards)
           setPrazna(takeArr)
           setIsGroupSize(false)
 
@@ -128,15 +128,12 @@ useEffect(() => {
   return () => {
       setCount(0)
   }
-}, [count, categoryArr, games, groupSizeArr,isCategory,isGroupSize,isTimeFrame,names,prazna, timeFrameArr,()=>resetGames()]);
-
-
-
+}, [count, categoryArr, games, groupSizeArr,isCategory,isGroupSize,isTimeFrame,names,prazna, timeFrameArr,allCards]);
 
 
   const resetGames = () => {
     setAllCards(true);
-            setShow(false)
+            setShow(false);
             setIsAction(false);
             setIsTeam(false);
             setIsInovation(false);
@@ -164,29 +161,8 @@ useEffect(() => {
     if(e.target.name === "energizes"){
       return setShow(true);
     }
-    if (e.target.name === "all") {
-      setAllCards(true);
-      setIsAction(false);
-      setIsTeam(false);
-      setIsInovation(false);
-      setIsLeader(false);
-      setIsTimeFrame1(false);
-      setIsTimeFrame2(false);
-      setIsTimeFrame3(false);
-      setIsTimeFrame4(false);
-      setIsGroupSize1(false);
-      setIsGroupSize2(false);
-      setIsGroupSize3(false);
-      setIsGroupSize4(false);
-      setIsCategory(false);
-      setIsTimeFrame(false);
-      setIsGroupSize(false);
-      setPrazna([]);
-      setCategoryArr([])
-      setTimeFrameArr([])
-      setGroupSizeArr([])
-  
-      return setDuplicateGames(games)
+    if (e.target.name === "all") {            
+      return resetGames();
     } 
     else {
       
@@ -224,7 +200,7 @@ useEffect(() => {
           if (tagName === "category") {
               setCategoryArr(categoryArr.filter(el => el !== name));
               setNames(["category", "timeFrame", "groupSize"])
-              setIsCategory(true)
+              setIsCategory(true)   
           }
           if (tagName === "timeFrame") {
               setTimeFrameArr(timeFrameArr.filter(el => el !== name));
@@ -243,8 +219,6 @@ useEffect(() => {
 
 
 }
-
-
   const generalData = {
     games,
     show,

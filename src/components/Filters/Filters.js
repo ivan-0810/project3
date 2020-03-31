@@ -40,7 +40,7 @@ const Filters = () => {
 
     return (<Fragment>
            {!filter && !isScrolling && 
-            <div className={isScrolling  ? "filter-games-button hideFilter" : "filter-games-button showFilter"} onClick={()=> setFilter(!filter)}>
+            <div className={isScrolling  ? "filter-games-button hideFilter" : "filter-games-button showFilter"} onMouseUp={()=> setFilter(!filter)}>
             <button>filter games</button><span><i className="fas fa-filter"></i></span>
         </div>
            }

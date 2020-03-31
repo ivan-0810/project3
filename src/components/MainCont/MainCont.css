@@ -9,14 +9,14 @@
 .header-fixed {
   clip-path: polygon(0 0, 100% 0, 100% 69%, 0 100%);
   background-color: #421782;
-  padding-bottom: 66vh;
+  padding-bottom: 39vh;
 }
 .down-header{
-
-    clip-path: polygon(0 58%, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 46%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 46%, 100% 0, 100% 100%, 0 100%);
     background-color: #421782;
-    padding: 66vh 0 100px 0;
-    margin-top:-47vh;
+    padding: 43vh 0 100px 0;
+    margin-top:-27vh;
     
 }
 .main-cont .f1 {

@@ -1,6 +1,6 @@
 
 
-const updateFunction = (arr1, arr2, arr3, games, names, prazna, setShow,resetGames) => {    
+const updateFunction = (arr1, arr2, arr3, games, names, prazna, setShow,setAllCards) => {    
   
     
     if (arr2.length === 0 && arr3.length === 0) {
@@ -11,7 +11,7 @@ const updateFunction = (arr1, arr2, arr3, games, names, prazna, setShow,resetGam
             filtered1.push(...filtered);
         })
         if(filtered1.length===0){
-             return resetGames()
+             return setAllCards(true)
         }
      
         return filtered1

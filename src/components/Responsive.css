@@ -15,7 +15,8 @@
         padding-bottom: 36vh;
     }
     .down-header{
-        clip-path: polygon(0 28%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 22%, 100% 0, 100% 100%, 0 100%);
+        margin-top: -12vh;
     }
     .filters, .filter-games-button{
         z-index: 2;
@@ -113,7 +114,7 @@
             margin-bottom: 0;
         }
         .games-list{
-            margin-top: -23vh;
+            margin-top: -12vh;
         }
     .games-list a {
         width: 100%;
