@@ -6,10 +6,7 @@ import Footer from '../Footer/Footer';
 import useFetch from "../../Hooks/useFetch"
 
 
-const RenderGame = props => {
-    console.log(props);
-    
-    
+const RenderGame = props => {  
     //const { games } = useContext(Context);      
    const params = props.match.params.id;
     //const gamesParams = games[params];
@@ -99,12 +96,10 @@ const RenderGame = props => {
                                         </div>
                                     ))}
                                 </div>
-                                <div className="clip-path-2">
-                                    <div style={{ paddingTop: '35vh' }}>
+                                    <div className="down-header header-render-game">
                                         <Header />
                                     </div>
-                                </div>
-                                <Footer />
+                                <Footer bgColor ="#421782"/>
                   </Fragment>
                 )}
         </div>

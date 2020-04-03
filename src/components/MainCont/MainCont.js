@@ -37,7 +37,7 @@ return (
               <Header />
               </div>
           </div>
-              <Footer />
+              <Footer bgColor="#421782" />
          </Fragment>
         }
 </div>

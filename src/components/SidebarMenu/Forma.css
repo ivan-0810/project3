@@ -1,0 +1,164 @@
+form div {
+    border:none
+}
+.forma {
+    width: 100%;
+    height: 100vh;
+}
+.overlay-forma {
+    width: 100%;
+    height: 100%;
+    background-color:rgba(66, 23, 130,0.8);
+}
+.overlay-forma .inside-contact {
+    width: 85%;
+    height: 85vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.overlay-forma .inside-contact .contact-info {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+}
+.contact-info div {
+    border: none;
+}
+.employer div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    margin: 10px auto;
+
+}
+.employer {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+ border: none;
+}
+.employer p{
+    width: 80%;
+    margin: 10px auto;
+}
+.employer div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.employer div label {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+}
+.employer div input {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+}
+
+.contact-info div label {
+    margin-bottom: 0;
+    font-size: 13px;
+    color:rgba(66, 23, 130);
+}
+.contact-info div input {   
+    color:rgba(66, 23, 130);
+    padding-left: 5px;
+    border: none;
+    outline: none;
+
+}
+.form-btn {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    margin-top: 50px;
+    border: 1px solid rgb(66, 23, 130);
+    padding: 5px 10px;
+    text-transform:uppercase ;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(66, 23, 130);
+    border-radius: 4px;
+}
+.form-btn:hover {
+    background-color: rgb(66, 23, 130);
+    color:  white;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .overlay-forma .inside-contact{
+        -ms-flex-wrap: unset;
+            flex-wrap: unset;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        top: 148vh;
+    }
+    .forma{
+        height:300vh;
+    }
+    .employer p {
+        width: 97%;
+    }
+    .employer div {
+        width: 100%;
+    }
+    .employer-first-child div {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .employer div label {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .employer div input {
+        width: 100%;
+    }
+    .form-btn {
+        margin-bottom: 30px;
+        padding: 5px 20px;
+        background-color: rgba(66, 23, 130);
+        color: white;
+        border: none;
+        border-radius: 4px;
+     
+    }    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .employer-first-child {
+       -ms-flex-preferred-size: 40%!important;
+           flex-basis: 40%!important;
+       margin-top: 30px;
+    }
+    .employer-first-child div {
+        width: 95%;
+    }
+    .inside-contact .employer {
+        -ms-flex-preferred-size: 27%;
+            flex-basis: 27%;
+    }
+   .form-btn {
+    padding: 0;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 0;
+   }
+
+}

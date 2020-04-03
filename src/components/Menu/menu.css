@@ -1,5 +1,8 @@
+
 .Menu{
     border-bottom: 1px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 20px 0;
     cursor: pointer;
@@ -10,19 +13,31 @@
     z-index: 100;
 }
 .menu, .menu-btn, .logo{ 
-    flex-basis: 33%;
+    -ms-flex-preferred-size: 33%; 
+        flex-basis: 33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .logo{ 
-    flex-basis: 40%;
-    justify-content: center;}
+    -ms-flex-preferred-size: 40%; 
+        flex-basis: 40%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;}
 .menu{
-    justify-content: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     margin-left: 20px;
 }
 .menu-btn{
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     margin-right: 20px;
 }
 .menu span {
@@ -30,8 +45,13 @@
     margin-left: 5px;
 }
 .hamburger{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 } 
 .line{
     width: 20px;

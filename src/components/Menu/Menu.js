@@ -4,6 +4,8 @@ import "./menu.css";
 import SidebarMenu from '../SidebarMenu/SidebarMenu';
 import { useContext } from 'react';
 import { Context } from '../../Context/GamesContext';
+
+
 const Menu = ({bgColor}) => {
     const {onScrolTop} = useContext(Context)
     const [showSidebar, setShowSidebar] = useState(false);

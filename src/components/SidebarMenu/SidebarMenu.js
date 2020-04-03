@@ -1,16 +1,20 @@
 import React from 'react';
 import "./SidebarMenu.css";
 import logo from "../../images/logo.png";
-import { useContext } from 'react';
-import { Context } from "../../Context/GamesContext";
+import {Link} from "react-router-dom"; 
+import Login from "../Login/Login"
+import { useState } from 'react';
+
 
 const SidebarMenu = ({setShowSidebar}) => {
-   
-    const { forma, setForma } = useContext(Context);
+        
+          const [ modalShow, setModalShow] = useState(false);
     return (
         <div className="sidebar-brightness">
-         
-                     <div className="sidebar">
+            
+            { modalShow ? 
+            <Login  modalShow={modalShow} setModalShow = {setModalShow}/> :
+            <div className="sidebar">
             <div className="sidebar-logo-closeX">
                 <div className="logo">
                     <div className="logo-img"><img src={logo} alt="" /></div>
@@ -19,13 +23,14 @@ const SidebarMenu = ({setShowSidebar}) => {
             </div>
 
             <ul>
-                <li><button onClick={()=> setForma(!forma)} className="yellow-color">Регистрирај се</button></li>
-                <li><button onClick={()=> setForma(!forma)} className="yellow-color">Најави се</button></li>
-                <li><a href="https://brainster.co/about" className="black-color" style={{color:"black"}}>За нас</a></li>
+                <li><Link to={"/form/"} className="yellow-color">Регистрирај се</Link></li>
+                <li><button onClick={() => setModalShow(true)} className="yellow-color">Најави се</button></li>
+                <li><Link to={"/about/"}className="black-color" style={{color:"black"}}>За нас</Link></li>
                 <li><a href="https://brainster.co/photos" className="black-color" style={{color:"black"}}>Галерија</a></li>
-                <li><a href="https://brainster.co/contact" className="black-color" style={{color:"black"}}>Контакт</a></li>
+                <li><Link to={"/contact/"} className="black-color" style={{color:"black"}}>Контакт</Link></li>
             </ul>
-        </div>
+        </div>    
+        }
         <div className="brightness">
             <div className="overlay"></div>
         </div>

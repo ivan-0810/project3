@@ -1,0 +1,30 @@
+.user-password {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 20px auto;
+}
+.user-password label {
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    color: #421782;
+}
+.user-password input {
+    border: 1px solid #421782;
+}
+.modal-btn {
+    width: 30%;
+    text-align: center;
+    padding-right: 0 15px;
+    color: white;
+    background-color: #421782;
+    border: none;
+    border-radius: 8px;
+    margin: 15px auto;
+}
+.modal-btn:hover {
+    color: #421782;
+    background-color:white;
+    border: 1px solid #421782;
+}

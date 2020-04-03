@@ -3,13 +3,14 @@ import logo from "../../images/logo.png";
 import "./Footer.css";
 import { useContext } from 'react';
 import { Context } from "../../Context/GamesContext";
-const Footer = props => {
+import {Link} from "react-router-dom"
+const Footer = ({bgColor}) => {
     const {onScrolTop} = useContext(Context)
 return (
-<div className='footer' >
+<div className='footer' style ={{backgroundColor: bgColor}}>
     <div className="footer-menu">
-        <a href="https://brainster.co/about">About us</a>
-        <a href="https://brainster.co/photos">Contact</a>
+        <Link to={"/about/"}>About us</Link>
+        <Link to={"/contact/"}>Contact</Link>
         <a href="https://brainster.co/contact">Gallery</a>
     </div>
     <div className="footer-logo">

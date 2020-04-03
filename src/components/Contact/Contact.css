@@ -1,0 +1,142 @@
+.contact {
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+}
+.overlay-contact {
+    width: 100%;
+    height: 100%;
+    background-color:rgba(66, 23, 130,0.8);width: 100%;
+    height: 100%;
+    background-color:rgba(66, 23, 130,0.8);
+}
+h1 {
+    color: white;
+    padding: 72px;
+    text-align: center;
+}
+.inside-contact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 60%;
+    height: 60vh;
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.inside-contact span .pliko {
+    font-size: 100px;
+    color: #421782;
+}
+.inside-contact .pliko {
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+.goback-btn {
+    color: #421782;
+    font-size: 20px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    text-transform: capitalize;
+    padding: 0px 15px;
+}
+.goback-btn i {
+    padding-right: 5px;
+}
+.goback-btn:hover {
+    text-decoration: none;
+}
+
+
+.contact-info i {
+    color: #421782;
+    margin-left: 10px;
+}
+.contact-info div {
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: lightgray;
+    border-radius: 8px;
+    padding: 10px;
+}
+.contact-info div span {
+    -ms-flex-preferred-size: 10% ;
+        flex-basis: 10% ;
+}
+.contact-info div div{
+    -ms-flex-preferred-size: 78%;
+        flex-basis: 78%;
+}
+.contact-info div p {
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+.contact-info div p, .contact-info div span {
+    margin-left: 15px;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .goback-btn{
+        font-size: 15px;
+    }
+    .inside-contact span .pliko {
+        font-size: 50px;
+    }
+    .inside-contact {
+        top: 55%;
+        width: 75%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    h1 {
+      font-size: 25px;
+    }
+    .inside-contact .pliko {
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none
+    }
+    .contact-info {
+        width: 90%;
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .goback-btn{
+        font-size: 15px;
+    }
+    h1 {
+        padding: 43px;
+    }
+    .inside-contact span .pliko {
+        font-size: 70px;
+    }
+    .contact-info {
+        width: 50%;
+        font-size: 13px;
+    }
+}

@@ -40,7 +40,7 @@ const Filters = () => {
 
     return (<Fragment>
            {!filter && !isScrolling && 
-            <div className={isScrolling  ? "filter-games-button hideFilter" : "filter-games-button showFilter"} onMouseUp={()=> setFilter(!filter)}>
+            <div className={isScrolling  ? "filter-games-button hideFilter" : "filter-games-button showFilter"} onClick={()=> setFilter(!filter)}>
             <button>filter games</button><span><i className="fas fa-filter"></i></span>
         </div>
            }
@@ -48,7 +48,7 @@ const Filters = () => {
             <div className="filters" style={filter ? {display:"flex"} : {}}>
                 <div className="inner-filters">
                 <div className="filter-close-btn" onClick={() => setFilter(!filter)}>
-                    <button>close</button>
+                    <button>save changes</button>
                 </div>
                     <div className="category">
                         <p>Browse by Category</p>

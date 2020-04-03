@@ -1,8 +1,11 @@
 .footer {
-    background-color: #421782;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 20px;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     border-top: 1px solid black;
 }
 .footer-menu, .footer-logo, .footer-links{
@@ -11,13 +14,23 @@
 .footer-links div {
     width: 70%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 .footer-menu, .footer-logo, .footer-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .footer-menu {
     margin-left: 20px
