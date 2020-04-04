@@ -14,7 +14,8 @@ form div {
     width: 85%;
     height: 85vh;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+        flex-wrap: wrap;     
+   
 }
 .overlay-forma .inside-contact .contact-info {
     -ms-flex-preferred-size: 30%;
@@ -105,10 +106,16 @@ form div {
         height: -webkit-fit-content;
         height: -moz-fit-content;
         height: fit-content;
-        top: 148vh;
+        position: unset;
+        -webkit-transform: none;
+        -ms-transform: none;
+    transform: none;
+    margin: 0 auto;
     }
     .forma{
-        height:300vh;
+        height:-webkit-fit-content;
+        height:-moz-fit-content;
+        height:fit-content!important;
     }
     .employer p {
         width: 97%;

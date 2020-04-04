@@ -9,7 +9,7 @@ const Footer = ({bgColor}) => {
 return (
 <div className='footer' style ={{backgroundColor: bgColor}}>
     <div className="footer-menu">
-        <Link to={"/about/"}>About us</Link>
+        <Link to={"/about/"} onClick={onScrolTop}>About us</Link>
         <Link to={"/contact/"}>Contact</Link>
         <a href="https://brainster.co/contact">Gallery</a>
     </div>

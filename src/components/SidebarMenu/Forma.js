@@ -10,6 +10,7 @@ const Forma = props => {
 
         }}>
             <div className="overlay-forma">
+                <div style={{padding:"50px 0"}}>
                 <form action="#" className="inside-contact">
                     <div className="contact-info employer employer-first-child">
                  
@@ -98,6 +99,7 @@ const Forma = props => {
                   
                     <button className="form-btn" type="submit">submit</button>
                 </form>
+                </div>
             </div>
         </div>
     );
