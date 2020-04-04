@@ -48,7 +48,7 @@ const Filters = () => {
             <div className="filters" style={filter ? {display:"flex"} : {}}>
                 <div className="inner-filters">
                 <div className="filter-close-btn" onClick={() => setFilter(!filter)}>
-                    <button>save changes</button>
+                    <button>close</button>
                 </div>
                     <div className="category">
                         <p>Browse by Category</p>

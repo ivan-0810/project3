@@ -1,8 +1,7 @@
 @media only screen and (min-width: 320px) and (max-width: 600px) {
     .main-cont {
         width:100%;
-        margin-top: 150px;
-        position: relative;
+        margin-top: 100px;
     }
     .main-cont .f1 {
         display: block;
@@ -11,12 +10,13 @@
         display: none;
       }
     .header-fixed{
-        padding-bottom: 36vh;
+        padding-bottom: 16vh;
     }
     .down-header{
         -webkit-clip-path: polygon(0 22%, 100% 0, 100% 100%, 0 100%);
                 clip-path: polygon(0 22%, 100% 0, 100% 100%, 0 100%);
         margin-top: -12vh;
+        padding: 16vh 0 22px 0;
     }
     .filters, .filter-games-button{
         z-index: 2;
@@ -35,11 +35,11 @@
     .inner-filters {
         width: 100%;
         padding: 0;
+        margin: 0;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        margin: 0 auto;
     }
     
     .filters p {
@@ -50,8 +50,8 @@
     .sidebar{
         width: 80%;
     } 
-    .category {
-        margin-right: 0;
+    .category, .time-group {
+        width: 99%;
     }
     .category button, .filter-btn {
         padding: 0;
@@ -87,10 +87,9 @@
         -ms-flex-wrap:wrap;
             flex-wrap:wrap;
         border-bottom: none;
+        padding: 10px 0;
     }
-    .menu, .logo{
-        margin-bottom:14px;
-    }
+
     .menu{
         -ms-flex-preferred-size: 27%;
             flex-basis: 27%;
@@ -102,6 +101,7 @@
             -ms-flex-pack: center;
                 justify-content: center;
         margin-top: 25px;
+        margin-right: 0;
     }
         .assessment-btn, .menu-btn1, .menu-btn2{
         padding: 7px 16px;
@@ -122,7 +122,8 @@
 
     }
     .header h1 {
-        font-size: 22px;
+        font-size: 20px;
+        padding: 0px;
         }
      
         header p {
@@ -154,14 +155,27 @@
         -webkit-box-direction: reverse;
             -ms-flex-direction: column-reverse;
                 flex-direction: column-reverse;
+                padding: 10px 0;
     }
     .footer-menu, .footer-logo, .footer-links{
         width: 100%;
     }
     .footer-links{ -webkit-box-ordinal-group: 4; -ms-flex-order: 3; order: 3;}
-    .footer-menu{-webkit-box-ordinal-group: 3;-ms-flex-order: 2;order: 2; margin: 18px 0;}
-    .footer-logo{-webkit-box-ordinal-group: 2;-ms-flex-order: 1;order: 1;}
+    .footer-links div a i {
+        font-size: 19px;
+    }
+    .footer-menu {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+        margin: 5px 0;
+        font-size: 13px;
+    }
 
+    .footer-logo{-webkit-box-ordinal-group: 2;-ms-flex-order: 1;order: 1;}
+    .logo-img {
+        width:80px
+    }
     .hideFilter{
         display: none;
     }
@@ -207,6 +221,7 @@
     }
     .filter-close-btn {
         margin: 5px auto;
+        padding: 3px;
     }
 
     .filter-games-button button, .filter-close-btn button  {
@@ -281,6 +296,9 @@
         margin: 0;
         left: 0;
         display: none;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content
     }
 
     .header-firstP {
