@@ -196,6 +196,9 @@
                 flex-direction: column;
         width: 90%;
     }
+    .game-text {
+        padding-bottom: 50px;
+    }
     .game-spec-categories {
         width: 100%;
     }
